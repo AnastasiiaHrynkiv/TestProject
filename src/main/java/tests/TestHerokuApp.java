@@ -2,6 +2,8 @@ package tests;
 
 import com.codeborne.selenide.Selectors;
 import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.openqa.selenium.Keys;
 import org.testng.annotations.Test;
 import pages.BasePage;
@@ -74,14 +76,14 @@ public class TestHerokuApp {
         $(".added-manually").should(disappear);
     }
 
-    @Test
+    /*@Test
     public void contextMenu() {
         open(APP_URL + "/context_menu");
         basePage.verifyPageTitle("Context Menu");
         $("#hot-spot").contextClick();
         switchTo().alert().accept();
         refresh();
-    }
+    }*/
 
     @Test
     public void basicAuth() {
@@ -121,7 +123,7 @@ public class TestHerokuApp {
     public void download() throws IOException {
         open(APP_URL + "/download");
         basePage.verifyPageTitle("File Downloader");
-        File file = $("a:nth-child(12)").download();
+        File file = $("a:nth-child(2)").download();
 
         if (file.exists()) {
             try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(file)))) {
@@ -270,6 +272,40 @@ public class TestHerokuApp {
         basePage.verifyPageTitle("Key Presses");
         $("#target").sendKeys(Keys.SPACE);
         $("#result").should(text("You entered: SPACE"));
+        $("#target").sendKeys(Keys.ARROW_UP);
+        $("#result").should(text("You entered: UP"));
+        $("#target").sendKeys(Keys.ARROW_DOWN);
+        $("#result").should(text("You entered: DOWN"));
+        $("#target").sendKeys(Keys.TAB);
+        $("#result").should(text("You entered: TAB"));
+    }
+
+    @Test
+    public void notificationMessage1() {
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
+        open(APP_URL + "/notification_message_rendered");
+        basePage.verifyPageTitle("Notification Message");
+        $(".example > p > a").click();
+        $("#flasha").should(appear).should(or("notificationText", text("Action unsuccesful, please try again"), text("Action successful")));
+    }
+
+    @Test
+    public void brokenImg1() {
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
+        open(APP_URL + "/broken_images");
+        basePage.verifyPageTitle("Broken Images");
+        $("img:nth-child(2)").should(image);
+        $("img:nth-child(3)").should(image);
+        $("img:nth-child(4)").should(image);
+    }
+
+    @Test
+    public void keyPresses1() {
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide().screenshots(true).savePageSource(true));
+        open(APP_URL + "/key_presses");
+        basePage.verifyPageTitle("Key Presses");
+        $("#target").sendKeys(Keys.SPACE);
+        $("#result").should(text("You entered: ENTER"));
         $("#target").sendKeys(Keys.ARROW_UP);
         $("#result").should(text("You entered: UP"));
         $("#target").sendKeys(Keys.ARROW_DOWN);
