@@ -1,0 +1,277 @@
+[1599550154.903][INFO]: Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 29099
+[1599550154.903][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1599550155.548][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "acceptInsecureCerts": true,
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--proxy-bypass-list=\u003C-loopback>" ],
+            "excludeSwitches": [ "enable-automation", "load-extension" ],
+            "extensions": [  ],
+            "prefs": {
+               "credentials_enable_service": false,
+               "download.default_directory": "C:\\Users\\ahryn\\IdeaProjects\\TestProject\\build\\downloads",
+               "plugins.always_open_pdf_externally": true
+            }
+         },
+         "pageLoadStrategy": "normal"
+      } ]
+   },
+   "desiredCapabilities": {
+      "acceptInsecureCerts": true,
+      "acceptSslCerts": true,
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--proxy-bypass-list=\u003C-loopback>" ],
+         "excludeSwitches": [ "enable-automation", "load-extension" ],
+         "extensions": [  ],
+         "prefs": {
+            "credentials_enable_service": false,
+            "download.default_directory": "C:\\Users\\ahryn\\IdeaProjects\\TestProject\\build\\downloads",
+            "plugins.always_open_pdf_externally": true
+         }
+      },
+      "handlesAlerts": true,
+      "javascriptEnabled": true,
+      "pageLoadStrategy": "normal",
+      "takesScreenshot": true
+   }
+}
+[1599550155.553][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "credentials_enable_service": false,
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "download": {
+      "default_directory": "C:\\Users\\ahryn\\IdeaProjects\\TestProject\\build\\downloads"
+   },
+   "plugins": {
+      "always_open_pdf_externally": true
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1599550155.554][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1599550155.556][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-blink-features=ShadowDOMV0 --enable-logging --ignore-certificate-errors --log-level=0 --no-first-run --password-store=basic --proxy-bypass-list=<-loopback> --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\ahryn\AppData\Local\Temp\scoped_dir37648_1622353696" data:,
+[1599550156.296][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1599550158.309][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1599550160.320][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": true,
+      "browserName": "chrome",
+      "browserVersion": "85.0.4183.83",
+      "chrome": {
+         "chromedriverVersion": "85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689})",
+         "userDataDir": "C:\\Users\\ahryn\\AppData\\Local\\Temp\\scoped_dir37648_1622353696"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:64694"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "62b9138faac9c0d15cfcdfafdba17a80"
+}
+[1599550160.363][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] COMMAND SetWindowRect {
+   "height": 768,
+   "width": 1366
+}
+[1599550160.363][INFO]: Waiting for pending navigations...
+[1599550160.366][INFO]: Done waiting for pending navigations. Status: ok
+[1599550160.473][INFO]: Waiting for pending navigations...
+[1599550160.473][INFO]: Done waiting for pending navigations. Status: ok
+[1599550160.473][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] RESPONSE SetWindowRect {
+   "height": 768,
+   "width": 1366,
+   "x": 10,
+   "y": 10
+}
+[1599550160.481][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] COMMAND Navigate {
+   "url": "http://the-internet.herokuapp.com/download"
+}
+[1599550160.481][INFO]: Waiting for pending navigations...
+[1599550160.485][INFO]: Done waiting for pending navigations. Status: ok
+[1599550164.743][INFO]: Waiting for pending navigations...
+[1599550166.194][INFO]: Done waiting for pending navigations. Status: ok
+[1599550166.194][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] RESPONSE Navigate
+[1599550166.232][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] COMMAND FindElement {
+   "using": "css selector",
+   "value": "h3"
+}
+[1599550166.232][INFO]: Waiting for pending navigations...
+[1599550166.233][INFO]: Done waiting for pending navigations. Status: ok
+[1599550166.247][INFO]: Waiting for pending navigations...
+[1599550166.248][INFO]: Done waiting for pending navigations. Status: ok
+[1599550166.248][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "b9f69957-67ad-46dc-8230-5f325fc5a298"
+}
+[1599550166.252][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] COMMAND GetElementText {
+   "id": "b9f69957-67ad-46dc-8230-5f325fc5a298"
+}
+[1599550166.252][INFO]: Waiting for pending navigations...
+[1599550166.253][INFO]: Done waiting for pending navigations. Status: ok
+[1599550166.265][INFO]: Waiting for pending navigations...
+[1599550166.267][INFO]: Done waiting for pending navigations. Status: ok
+[1599550166.267][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] RESPONSE GetElementText "File Downloader"
+[1599550166.270][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] COMMAND FindElement {
+   "using": "css selector",
+   "value": "a:nth-child(1)"
+}
+[1599550166.271][INFO]: Waiting for pending navigations...
+[1599550166.272][INFO]: Done waiting for pending navigations. Status: ok
+[1599550166.282][INFO]: Waiting for pending navigations...
+[1599550166.283][INFO]: Done waiting for pending navigations. Status: ok
+[1599550166.283][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "d870e251-fadf-421a-bf2a-a741117d2981"
+}
+[1599550166.303][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] COMMAND ExecuteScript {
+   "args": [ {
+      "element-6066-11e4-a52e-4f735466cecf": "d870e251-fadf-421a-bf2a-a741117d2981"
+   } ],
+   "script": "return (function(){return function(){var k=this;function l(a){return void 0!==a}function m(a){return\"string\"==typeof a}function aa(a,b){a=a.split(\".\");var c=k;a[0]in c||!c.execScript||c.execScript(..."
+}
+[1599550166.304][INFO]: Waiting for pending navigations...
+[1599550166.305][INFO]: Done waiting for pending navigations. Status: ok
+[1599550166.315][INFO]: Waiting for pending navigations...
+[1599550166.316][INFO]: Done waiting for pending navigations. Status: ok
+[1599550166.316][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] RESPONSE ExecuteScript true
+[1599550166.323][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] COMMAND ExecuteScript {
+   "args": [ {
+      "element-6066-11e4-a52e-4f735466cecf": "d870e251-fadf-421a-bf2a-a741117d2981"
+   }, "href" ],
+   "script": "return (function(){return function(){var d=this;function f(a){return\"string\"==typeof a};function h(a,b){this.code=a;this.a=l[a]||m;this.message=b||\"\";a=this.a.replace(/((?:^|\\s+)[a-z])/g,function(a..."
+}
+[1599550166.323][INFO]: Waiting for pending navigations...
+[1599550166.324][INFO]: Done waiting for pending navigations. Status: ok
+[1599550166.328][INFO]: Waiting for pending navigations...
+[1599550166.329][INFO]: Done waiting for pending navigations. Status: ok
+[1599550166.329][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] RESPONSE ExecuteScript "https://github.com/tourdedave/the-internet"
+[1599550166.340][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] COMMAND ExecuteScript {
+   "args": [  ],
+   "script": "return navigator.userAgent;"
+}
+[1599550166.340][INFO]: Waiting for pending navigations...
+[1599550166.341][INFO]: Done waiting for pending navigations. Status: ok
+[1599550166.344][INFO]: Waiting for pending navigations...
+[1599550166.345][INFO]: Done waiting for pending navigations. Status: ok
+[1599550166.345][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] RESPONSE ExecuteScript "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36"
+[1599550166.349][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] COMMAND GetCookies {
+
+}
+[1599550166.349][INFO]: Waiting for pending navigations...
+[1599550166.349][INFO]: Done waiting for pending navigations. Status: ok
+[1599550166.352][INFO]: Waiting for pending navigations...
+[1599550166.353][INFO]: Done waiting for pending navigations. Status: ok
+[1599550166.353][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] RESPONSE GetCookies [ {
+   "domain": ".the-internet.herokuapp.com",
+   "expiry": 1914910165,
+   "httpOnly": false,
+   "name": "optimizelyBuckets",
+   "path": "/",
+   "secure": false,
+   "value": "%7B%7D"
+}, {
+   "domain": ".the-internet.herokuapp.com",
+   "expiry": 1914910165,
+   "httpOnly": false,
+   "name": "optimizelyEndUserId",
+   "path": "/",
+   "secure": false,
+   "value": "oeu1599550165540r0.9196654334738303"
+}, {
+   "domain": ".the-internet.herokuapp.com",
+   "expiry": 1599550181,
+   "httpOnly": false,
+   "name": "optimizelyPendingLogEvents",
+   "path": "/",
+   "secure": false,
+   "value": "%5B%5D"
+}, {
+   "domain": ".the-internet.herokuapp.com",
+   "expiry": 1914910165,
+   "httpOnly": false,
+   "name": "optimizelySegments",
+   "path": "/",
+   "secure": false,
+   "value": "%7B%7D"
+}, {
+   "domain": "the-internet.herokuapp.com",
+   "httpOnly": true,
+   "name": "rack.session",
+   "path": "/",
+   "secure": false,
+   "value": "BAh7CUkiD3Nlc3Npb25faWQGOgZFVEkiRWFhNDA2ZGRkMDM4M2Y2MjYyNTU3%0AYjQyYjQ4M2I1OTcwMGEyNWY0MzJiODM3N2M2ZGUyYTM3OTE2ZGJmYzAwNTAG%0AOwBGSSIJY3NyZgY7AEZJIiUzNzkxYTFjY2VmZWY3NzUyMDg0YTlhZDcxMTc3%0AYzM4ZgY7..."
+} ]
+[1599550168.063][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] COMMAND Quit {
+
+}
+[1599550168.568][INFO]: [62b9138faac9c0d15cfcdfafdba17a80] RESPONSE Quit
